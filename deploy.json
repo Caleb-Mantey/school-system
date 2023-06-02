@@ -1,0 +1,10 @@
+{
+  "app_name": "dropin_backend",
+  "deploy_path": "/home/deploy/deploy/backend",
+  "env_file": "/home/deploy/deploy/backend/shared/.env",
+  "git_repo": "git@github.com:Dunga-Studios/dropin_backend.git",
+  "branch": {
+    "staging": "staging",
+    "production": "production"
+  }
+}
