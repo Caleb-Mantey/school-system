@@ -4,7 +4,7 @@
   "description": "A school management system",
   "author": "",
   "private": true,
-  "license": "PROPRIETARY (Dropin copyright 2022)",
+  "license": "PROPRIETARY (copyright 2022)",
   "scripts": {
     "prebuild": "rimraf dist",
     "build": "nest build",
@@ -33,7 +33,7 @@
     "g:decorator": "grunt exec:decorator:",
     "g:interceptor": "grunt exec:interceptor:",
     "g:interface": "grunt exec:interface:",
-    "compodoc": "npx compodoc -p tsconfig.json -n \"Dropin Documentation\" ",
+    "compodoc": "npx compodoc -p tsconfig.json -n \"Documentation\" ",
     "deploy:staging": "grunt deploy:staging",
     "setup:staging": "grunt setup:staging",
     "logs:staging": "grunt logs:staging",

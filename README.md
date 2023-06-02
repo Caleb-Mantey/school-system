@@ -24,7 +24,7 @@
 
 ## Description
 
-Dropin Backend is an application for ride hauling built with NestJs framework TypeScript starter repository.
+A School Management application built with NestJs framework TypeScript starter repository.
 
 ## Installation
 
