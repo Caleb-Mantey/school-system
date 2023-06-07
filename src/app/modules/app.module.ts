@@ -43,6 +43,7 @@ import { RefreshToken } from '../../db/entities/refresh_token.entity';
 import { compare } from '../../utils/bcrypt';
 import { ApiAuthsModule } from './api-auths/api-auths.module';
 import importExportFeature from '@adminjs/import-export';
+import { CronJobsModule } from './cron-jobs/cron-jobs.module';
 
 // eslint-disable-next-line @typescript-eslint/no-var-requires
 const ormsettings = require('../../../ormconfig');
@@ -184,6 +185,7 @@ AdminJS.registerAdapter({ Database, Resource });
     SuperAdminModule,
     SmsModule,
     ApiAuthsModule,
+    CronJobsModule,
   ],
   controllers: [AppController],
   providers: [AppService, AppCacheService, PushNotificationsService],
