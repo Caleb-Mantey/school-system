@@ -1,7 +1,5 @@
 import { Injectable, Logger } from '@nestjs/common';
 import { Cron, CronExpression, Timeout } from '@nestjs/schedule';
-import { InjectQueue } from '@nestjs/bull';
-import { Queue } from 'bull';
 
 import { EventEmitter2 } from '@nestjs/event-emitter';
 import ISuperAdmin from '../../../db/types/super_admin.interface';
@@ -9,10 +7,7 @@ import { CreateAdminDto } from '../../../db/dto/admin.dto';
 
 @Injectable()
 export class CronJobsService {
-  constructor(
-    private readonly eventEmitter: EventEmitter2,
-    @InjectQueue('driver') private queue: Queue,
-  ) {}
+  constructor(private readonly eventEmitter: EventEmitter2) {}
 
   @Timeout(5000)
   async handleTimeout() {
